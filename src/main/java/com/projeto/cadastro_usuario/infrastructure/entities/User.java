@@ -8,9 +8,9 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "tb-usuario")
+@Table(name = "tb-user")
 @Entity
-public class Usuario {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -19,6 +19,6 @@ public class Usuario {
     @Column(name = "email", unique = true)
     private String email;
 
-    @Column(name="nome")
-    private String nome;
+    @Column(name="name")
+    private String name;
 }
